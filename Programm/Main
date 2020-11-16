@@ -1,0 +1,29 @@
+from Programm.Warrior import Warrior
+import random
+import copy
+
+if __name__ == '__main__':
+    warrior1 = Warrior("Воин1")
+    warrior2 = Warrior("Воин2")
+    warrior3 = Warrior("Воин3")
+    list_warrior = [warrior1, warrior2, warrior3]
+    print(len(list_warrior))
+    gameStatus = True
+    copy_list_warrior = []
+    while gameStatus:
+        first = random.randint(0, len(list_warrior)-1)
+        second = random.randint(0, len(list_warrior)-1)
+        while second == first:
+            second = random.randint(0, len(list_warrior)-1)
+        list_warrior[second].health -= list_warrior[first].damage
+        copy_list_warrior = copy.copy(list_warrior)
+        for i in range(len(copy_list_warrior)):
+            if (copy_list_warrior[i].health <= 0):
+                list_warrior[i].__del__()
+                list_warrior.pop(i)
+        if(len(list_warrior) == 1):
+            print("Победитель!!!")
+            list_warrior[0].printInformation()
+            gameStatus = False
+
+
