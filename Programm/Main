@@ -1,0 +1,28 @@
+from Programm.Warrior import Warrior
+import random
+
+if __name__ == '__main__':
+    warrior1 = Warrior("Воин1")
+    warrior2 = Warrior("Воин2")
+    warrior3 = Warrior("Воин3")
+    list_warrior = [warrior1, warrior2, warrior3]
+    gameStatus = True
+    while gameStatus:
+        first = random.randint(0, 2)
+        second = random.randint(0, 2)
+        while first == second:
+            second = random.randint(0, 2)
+        list_warrior[second].health -= list_warrior[first].damage
+        for i in range(3):
+            if (list_warrior[i].health == 0):
+                print("У воина " + list_warrior[i].name + " 0 здоровья")
+                gameStatus = False
+        maxHealth = 0
+        maxHealthIndex = -1
+    for i in range(3):
+        if (list_warrior[i].health >= maxHealth):
+            maxHealth = list_warrior[i].health
+            maxHealthIndex = i
+    print("У воина " + list_warrior[maxHealthIndex].name + " наибольшее здоровье. Он победил")
+
+
