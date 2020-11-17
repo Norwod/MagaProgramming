@@ -1,6 +1,8 @@
+import math
+
+
 class Weapon:
-    def __init__(self, name, damage):
-        self.__name = name
+    def __init__(self, damage):
         self.__damage = damage
 
     @property
@@ -9,7 +11,7 @@ class Weapon:
 
     @damage.setter
     def damage(self, damage):
-        if damage in range(1, 100):
+        if damage in range(0.1, math.inf):
             self.__damage = damage
         else:
             print("Недопустимый урон оружия")

@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14718786-ce23-4f4e-bb28-897f7295422c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Programm/Weapon.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Programm/Bow.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Programm/Sword.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programm/Main" beforeDir="false" afterPath="$PROJECT_DIR$/Programm/Main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programm/Weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programm/Weapon.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605514890113</updated>
-      <workItem from="1605514895276" duration="10689000" />
+      <workItem from="1605514895276" duration="10817000" />
+      <workItem from="1605585882071" duration="7110000" />
     </task>
     <servers />
   </component>
@@ -106,6 +110,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1051" y="502" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605515059965">
@@ -116,40 +121,40 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1605526595672" />
-    <state width="670" height="266" key="GridCell.Tab.0.bottom" timestamp="1605524988033">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1605602186185">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605524988033" />
-    <state width="670" height="266" key="GridCell.Tab.0.center" timestamp="1605524988033">
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605602186185" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1605602186184">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="266" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605524988033" />
-    <state width="670" height="266" key="GridCell.Tab.0.left" timestamp="1605524988032">
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605602186184" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1605602186184">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="266" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605524988032" />
-    <state width="670" height="266" key="GridCell.Tab.0.right" timestamp="1605524988033">
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605602186184" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1605602186184">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="266" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605524988033" />
-    <state width="670" height="328" key="GridCell.Tab.1.bottom" timestamp="1605522665506">
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605602186184" />
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom" timestamp="1605601086287">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="328" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605522665506" />
-    <state width="670" height="328" key="GridCell.Tab.1.center" timestamp="1605522665506">
+    <state width="1340" height="328" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605601086287" />
+    <state width="1340" height="328" key="GridCell.Tab.1.center" timestamp="1605601086286">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="328" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605522665506" />
-    <state width="670" height="328" key="GridCell.Tab.1.left" timestamp="1605522665506">
+    <state width="1340" height="328" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605601086286" />
+    <state width="1340" height="328" key="GridCell.Tab.1.left" timestamp="1605601086286">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="328" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605522665506" />
-    <state width="670" height="328" key="GridCell.Tab.1.right" timestamp="1605522665506">
+    <state width="1340" height="328" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605601086286" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right" timestamp="1605601086287">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="670" height="328" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605522665506" />
+    <state width="1340" height="328" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605601086287" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MagaProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1605524988020" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programm" />
+    <SUITE FILE_PATH="coverage/MagaProgramming$Main.coverage" NAME="Main Coverage Results" MODIFIED="1605602995056" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programm" />
   </component>
 </project>

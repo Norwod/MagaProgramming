@@ -1,4 +1,6 @@
 from Programm.Warrior import Warrior
+from Programm.Bow import Bow
+from Programm.Sword import Sword
 import random
 import copy
 
@@ -21,9 +23,7 @@ if __name__ == '__main__':
             if (copy_list_warrior[i].health <= 0):
                 list_warrior[i].__del__()
                 list_warrior.pop(i)
-        if(len(list_warrior) == 1):
+        if (len(list_warrior) == 1):
             print("Победитель!!!")
             list_warrior[0].printInformation()
             gameStatus = False
-
-
