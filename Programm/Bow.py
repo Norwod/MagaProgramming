@@ -13,6 +13,10 @@ class Bow(Weapon):
     def name(self):
         return self.__name
 
+    @property
+    def chance(self):
+        return self.__chance
+
     def potential_damage(self):
         return self.__damage * (self.__chance * 0.01)
 

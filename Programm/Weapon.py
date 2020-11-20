@@ -16,7 +16,7 @@ class Weapon:
 
     @damage.setter
     def damage(self, damage):
-        if damage in range(0.1, math.inf):
+        if damage in range(0, 100):
             self.__damage = damage
         else:
             print("Недопустимый урон оружия")

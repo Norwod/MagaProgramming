@@ -4,7 +4,7 @@ import random
 
 class Sword(Weapon):
 
-    def __init__(self, name = "Меч", damage=10, durability=100):
+    def __init__(self, name="Меч", damage=10, durability=100):
         self.__name = name
         self.__damage = damage
         self.__durability = durability
@@ -16,7 +16,10 @@ class Sword(Weapon):
     def attack(self):
         attack_damage = self.__damage * (self.__durability * 0.01)
         if random.randint(0, 1) == 0:
-            self.__durability -= 10
+            if self.__durability == 0:
+                return 0
+            else:
+                self.__durability -= 10
         return attack_damage
 
     @property
