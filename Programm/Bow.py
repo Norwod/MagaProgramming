@@ -4,9 +4,14 @@ import random
 
 class Bow(Weapon):
 
-    def __init__(self, damage, chance):
+    def __init__(self, name="Лук", damage=10, chance=60):
+        self.__name = name
         self.__damage = damage
         self.__chance = chance
+
+    @property
+    def name(self):
+        return self.__name
 
     def potential_damage(self):
         return self.__damage * (self.__chance * 0.01)
@@ -19,3 +24,6 @@ class Bow(Weapon):
         else:
             return 0
 
+    @property
+    def damage(self):
+        return self.potential_damage()
